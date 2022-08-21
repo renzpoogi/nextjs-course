@@ -1,6 +1,7 @@
 import {useRouter} from "next/router";
 import classes from './MeetupItem.module.css'
 import Card from "../ui/Card";
+import Image from "next/image";
 // import FavoritesContext from "../../store/favorites-context";
 
 
@@ -32,7 +33,7 @@ function MeetupItem(props) {
         <li className={classes.item}>
             <Card>
             <div className={classes.image}>
-                <img src={image} alt={title} />
+                <Image src={image} alt={title} />
             </div>
             <div className={classes.content}>
                 <h3>{title}</h3>

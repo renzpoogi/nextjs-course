@@ -1,10 +1,11 @@
 import {Fragment} from "react";
 import classes from "./MeetupDetail.module.css"
+import Image from 'next/image'
 function MeetupDetail ({image, title, description,address}) {
 
     return (
         <section className={classes.detail}>
-            <img src={image} alt="description" />
+            <Image src={image} alt="description" />
             <h1>{title}</h1>
             <address>{address}</address>
             <p>{description}</p>
